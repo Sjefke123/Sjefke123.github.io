@@ -26,12 +26,17 @@
     return storedTheme() || (systemDark.matches ? 'dark' : 'light');
   }
 
+  var LABELS = {
+    light: { text: 'licht',  aria: 'Wissel naar het lichte thema' },
+    dark:  { text: 'donker', aria: 'Wissel naar het donkere thema' }
+  };
+
   // The button shows the theme you'd get by pressing it, not the current one.
   function syncToggle() {
     if (!toggle) return;
-    var next = activeTheme() === 'dark' ? 'light' : 'dark';
-    toggleLabel.textContent = next;
-    toggle.setAttribute('aria-label', 'Switch to ' + next + ' theme');
+    var next = LABELS[activeTheme() === 'dark' ? 'light' : 'dark'];
+    toggleLabel.textContent = next.text;
+    toggle.setAttribute('aria-label', next.aria);
   }
 
   function setTheme(theme) {
