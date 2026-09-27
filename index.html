@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[YOUR NAME] — developer</title>
+<meta name="description" content="[PLACEHOLDER: one sentence about you. Shown in search results and link previews.]">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="style.css">
+<!-- Sets the saved theme before first paint so the page never flashes the wrong colours. -->
+<script>
+  (function () {
+    var saved = null;
+    try { saved = localStorage.getItem('theme'); } catch (e) {}
+    if (saved === 'light' || saved === 'dark') {
+      document.documentElement.setAttribute('data-theme', saved);
+    }
+    document.documentElement.classList.add('js');
+  })();
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <div class="site-header__identity">
+      <p class="site-title">[YOUR NAME]</p>
+      <p class="site-subtitle">[PLACEHOLDER: what you do, in six words or so]</p>
+    </div>
+    <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch theme">
+      <span class="theme-toggle__label" id="theme-toggle-label">dark</span>
+    </button>
+  </div>
+</header>
+
+<main id="main" class="page">
+
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 class="toc__heading" id="toc-heading">Contents</h2>
+    <ol class="toc__list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#teaching">Teaching</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
+
+  <!-- ABOUT ------------------------------------------------------------- -->
+  <section class="section reveal" id="about">
+    <h2 class="section__heading">About</h2>
+
+    <aside class="infobox" aria-label="Quick facts">
+      <img class="infobox__photo"
+           src="photo.jpg"
+           alt="[PLACEHOLDER: describe your photo, e.g. 'Portrait of [Your Name]']"
+           width="320" height="320">
+      <p class="infobox__caption">[PLACEHOLDER: photo caption, or delete this line]</p>
+      <table class="infobox__table">
+        <tbody>
+          <tr>
+            <th scope="row">Name</th>
+            <td>[YOUR NAME]</td>
+          </tr>
+          <tr>
+            <th scope="row">Role</th>
+            <td>[PLACEHOLDER: e.g. Backend developer]</td>
+          </tr>
+          <tr>
+            <th scope="row">Location</th>
+            <td>[PLACEHOLDER: city, country]</td>
+          </tr>
+          <tr>
+            <th scope="row">Stack</th>
+            <td>
+              <ul class="tag-list">
+                <li class="tag">[LANG]</li>
+                <li class="tag">[FRAMEWORK]</li>
+                <li class="tag">[DATABASE]</li>
+                <li class="tag">[TOOL]</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Teaching</th>
+            <td>CoderMinds</td>
+          </tr>
+          <tr>
+            <th scope="row">Links</th>
+            <td>
+              <a href="https://github.com/[USERNAME]">GitHub</a>,
+              <a href="mailto:[YOU@EXAMPLE.COM]">email</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </aside>
+
+    <p class="lede">[PLACEHOLDER: one or two sentences. Who you are and what you build. Write it the way you'd say it out loud.]</p>
+
+    <p>[PLACEHOLDER: what you're working on right now. A job, a degree, a side project — whatever is actually taking up your time.]</p>
+
+    <p>[PLACEHOLDER: how you got here. Short version. What you started with, what you moved to, why.]</p>
+
+    <p>[PLACEHOLDER: what you like working on, and what you'd rather avoid. Being specific here is more useful than being impressive.]</p>
+
+    <p>Outside of code: [PLACEHOLDER: two or three things. Keeps the page from reading like a CV.]</p>
+
+    <p class="backlink"><a href="#toc-heading">Back to contents</a></p>
+  </section>
+
+  <!-- PROJECTS ---------------------------------------------------------- -->
+  <section class="section reveal" id="projects">
+    <h2 class="section__heading">Projects</h2>
+
+    <p class="section__intro">[PLACEHOLDER: one line framing the list. E.g. "Things I built and actually finished." Delete if you'd rather let the list speak.]</p>
+
+    <ol class="projects">
+
+      <li class="project">
+        <h3 class="project__name">[PROJECT NAME]</h3>
+        <p class="project__summary">[PLACEHOLDER: one line. What it does and who it's for.]</p>
+        <ul class="tag-list project__tech">
+          <li class="tag">[TECH]</li>
+          <li class="tag">[TECH]</li>
+          <li class="tag">[TECH]</li>
+        </ul>
+        <p class="project__links">
+          <a href="[LIVE URL]">Live</a>
+          <span class="project__sep" aria-hidden="true">·</span>
+          <a href="[REPO URL]">Repository</a>
+        </p>
+      </li>
+
+      <li class="project">
+        <h3 class="project__name">[PROJECT NAME]</h3>
+        <p class="project__summary">[PLACEHOLDER: one line. What it does and who it's for.]</p>
+        <ul class="tag-list project__tech">
+          <li class="tag">[TECH]</li>
+          <li class="tag">[TECH]</li>
+        </ul>
+        <p class="project__links">
+          <a href="[LIVE URL]">Live</a>
+          <span class="project__sep" aria-hidden="true">·</span>
+          <a href="[REPO URL]">Repository</a>
+        </p>
+      </li>
+
+      <li class="project">
+        <h3 class="project__name">[PROJECT NAME]</h3>
+        <p class="project__summary">[PLACEHOLDER: one line. What it does and who it's for.]</p>
+        <ul class="tag-list project__tech">
+          <li class="tag">[TECH]</li>
+          <li class="tag">[TECH]</li>
+          <li class="tag">[TECH]</li>
+        </ul>
+        <p class="project__links">
+          <!-- No live version? Delete the Live link and the separator. -->
+          <a href="[REPO URL]">Repository</a>
+        </p>
+      </li>
+
+      <li class="project">
+        <h3 class="project__name">[PROJECT NAME]</h3>
+        <p class="project__summary">[PLACEHOLDER: one line. What it does and who it's for.]</p>
+        <ul class="tag-list project__tech">
+          <li class="tag">[TECH]</li>
+          <li class="tag">[TECH]</li>
+        </ul>
+        <p class="project__links">
+          <a href="[LIVE URL]">Live</a>
+          <span class="project__sep" aria-hidden="true">·</span>
+          <a href="[REPO URL]">Repository</a>
+        </p>
+      </li>
+
+    </ol>
+
+    <p class="note">More on <a href="https://github.com/[USERNAME]">GitHub</a>, including the unfinished ones.</p>
+
+    <p class="backlink"><a href="#toc-heading">Back to contents</a></p>
+  </section>
+
+  <!-- SKILLS ------------------------------------------------------------ -->
+  <section class="section reveal" id="skills">
+    <h2 class="section__heading">Skills</h2>
+
+    <p class="section__intro">Roughly ordered by how often I reach for them.</p>
+
+    <div class="skills">
+
+      <section class="skill-group">
+        <h3 class="skill-group__name">Languages</h3>
+        <ul class="tag-list">
+          <li class="tag">[LANGUAGE]</li>
+          <li class="tag">[LANGUAGE]</li>
+          <li class="tag">[LANGUAGE]</li>
+          <li class="tag">[LANGUAGE]</li>
+        </ul>
+      </section>
+
+      <section class="skill-group">
+        <h3 class="skill-group__name">Frameworks &amp; libraries</h3>
+        <ul class="tag-list">
+          <li class="tag">[FRAMEWORK]</li>
+          <li class="tag">[FRAMEWORK]</li>
+          <li class="tag">[LIBRARY]</li>
+        </ul>
+      </section>
+
+      <section class="skill-group">
+        <h3 class="skill-group__name">Data</h3>
+        <ul class="tag-list">
+          <li class="tag">[DATABASE]</li>
+          <li class="tag">[DATABASE]</li>
+          <li class="tag">[TOOL]</li>
+        </ul>
+      </section>
+
+      <section class="skill-group">
+        <h3 class="skill-group__name">Tooling</h3>
+        <ul class="tag-list">
+          <li class="tag">git</li>
+          <li class="tag">[EDITOR]</li>
+          <li class="tag">[CI TOOL]</li>
+          <li class="tag">[OS / SHELL]</li>
+        </ul>
+      </section>
+
+      <section class="skill-group">
+        <h3 class="skill-group__name">Learning right now</h3>
+        <ul class="tag-list">
+          <li class="tag">[THING]</li>
+          <li class="tag">[THING]</li>
+        </ul>
+      </section>
+
+    </div>
+
+    <p class="note">[PLACEHOLDER: optional honest line, e.g. "I know enough [X] to be dangerous and not much more."]</p>
+
+    <p class="backlink"><a href="#toc-heading">Back to contents</a></p>
+  </section>
+
+  <!-- TEACHING ---------------------------------------------------------- -->
+  <section class="section reveal" id="teaching">
+    <h2 class="section__heading">Teaching</h2>
+
+    <h3 class="subheading">CoderMinds</h3>
+
+    <p>[PLACEHOLDER: what CoderMinds is, in one or two sentences. Who it's for, what happens there.]</p>
+
+    <p>[PLACEHOLDER: your role and how long you've been doing it. What you teach, to what age group or level.]</p>
+
+    <p>[PLACEHOLDER: something you've learned from teaching that changed how you write code. This is the part people remember.]</p>
+
+    <dl class="facts">
+      <div class="facts__row">
+        <dt>Role</dt>
+        <dd>[PLACEHOLDER: e.g. Instructor]</dd>
+      </div>
+      <div class="facts__row">
+        <dt>Since</dt>
+        <dd>[PLACEHOLDER: year]</dd>
+      </div>
+      <div class="facts__row">
+        <dt>Topics</dt>
+        <dd>[PLACEHOLDER: e.g. Python basics, web fundamentals, first projects]</dd>
+      </div>
+      <div class="facts__row">
+        <dt>Format</dt>
+        <dd>[PLACEHOLDER: e.g. weekly group sessions, in person]</dd>
+      </div>
+    </dl>
+
+    <p class="note">More about the programme at <a href="[CODERMINDS URL]">[CODERMINDS URL]</a>.</p>
+
+    <p class="backlink"><a href="#toc-heading">Back to contents</a></p>
+  </section>
+
+  <!-- CONTACT ----------------------------------------------------------- -->
+  <section class="section reveal" id="contact">
+    <h2 class="section__heading">Contact</h2>
+
+    <p>[PLACEHOLDER: one line about what you're open to — freelance work, a job, questions from students, nothing at all. Say what's true.]</p>
+
+    <dl class="facts">
+      <div class="facts__row">
+        <dt>Email</dt>
+        <dd><a href="mailto:[YOU@EXAMPLE.COM]">[YOU@EXAMPLE.COM]</a></dd>
+      </div>
+      <div class="facts__row">
+        <dt>GitHub</dt>
+        <dd><a href="https://github.com/[USERNAME]">github.com/[USERNAME]</a></dd>
+      </div>
+      <div class="facts__row">
+        <dt>[OTHER]</dt>
+        <dd><a href="[URL]">[PLACEHOLDER: LinkedIn, Mastodon, blog — or delete this row]</a></dd>
+      </div>
+    </dl>
+
+    <p class="note">Email is the one I actually check.</p>
+
+    <p class="backlink"><a href="#toc-heading">Back to contents</a></p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Written by hand. Three files, no build step.</p>
+  <p class="site-footer__meta">Last updated [PLACEHOLDER: month year]</p>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
